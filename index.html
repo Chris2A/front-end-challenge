@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/ms-icon-150x150.png">
+
+    <title>musicStore.com - Your musical corner</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="css/album.css" rel="stylesheet">
+	
+  </head>
+
+  <body>
+	
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-light">Stream anything in the Apple Music collection on all your devices ad-free. Download albums, tracks, and music videos to your personal library and play them offline. Start your free three-month trial and cancel anytime.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h3 class="text-white">Menu</h3>
+			  <ul class="list-unstyled">
+                <li><a href="index.html" class="text-white"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="subscribe.html" class="text-white"><i class="fas fa-user-plus"></i> Subscribe</a></li>
+              </ul>
+			  <h5 class="text-white">Contact</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white"><i class="fab fa-twitter-square"></i> Follow on Twitter</a></li>
+                <li><a href="#" class="text-white"><i class="fab fa-facebook-square"></i> Like on Facebook</a></li>
+                <li><a href="#" class="text-white"><i class="fas fa-envelope-square"></i> Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu navbar navbar-light bg-light shadow-sm" style="border-bottom:16px solid #333333; background: linear-gradient(to bottom right, #99cc33 0%, #ffffff 60%);">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+			<img style="max-height:100px;height:auto;width:100%;max-width:500px;"src="img/logo-musicStore.png" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="intro parallax jumbotron text-center text-white" style="border-bottom:8px solid #99cc33">
+        <div class="container">
+          <p><img src="img/headphones-drawing_512-512.png" style="width:25%"/></p>
+		  <h1 class="jumbotron-heading">iTunes Store's Top Albums</h1>
+          <p class="lead text-white">Buy the iTunes Store's Top 100 albums and enjoy your favorite music from any device.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2" data-toggle="modal" data-target="#signModal">Sign in</a>
+            <a href="subscribe.html" class="btn btn-warning my-2">Subscribe</a>
+          </p>
+		  <!-- Modal SIGN IN-->
+					<div id="signModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h3 class="modal-title text-dark"><i class="fas fa-user-check"></i> Sign In</h3><button type="button" class="close" data-dismiss="modal">&times;</button>
+						  </div>
+						  <div class="modal-body">
+							<form action="">
+								<div class="form-group text-dark">
+								  <label for="email">Email:</label>
+								  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+								</div>
+								<div class="form-group text-dark">
+								  <label for="pwd">Password:</label>
+								  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+								</div>
+								<div class="checkbox text-dark">
+								  <label><input type="checkbox" name="remember"> Remember me</label>
+								</div>
+								<button type="submit" class="btn btn-default">Submit</button>
+						  </form>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+
+					  </div>
+					</div>
+				<!-- FIN Modal -->
+        </div>
+      </section>
+
+      <div ng-app="iTunesApp" ng-controller="artistCtrl" class="page-container album py-5 bg-light">
+        <div ng-repeat="song in control" class="container">
+		
+		<div class="slinput" ng-init="" style="margin:0px 0px 40px 0px">
+			<i class="fa fa-search left-icon"></i> 
+			<input placeholder="Search by Album | Artist | Category" ng-model="searchInputVal" style="width:90%"/> 
+			<i ng-class="{'fa' : true, 'fa-close' : true, 'right-icon' : true, active : (searchInputVal.length > 0)}" ng-click="searchInputVal = ''"></i>
+		</div>
+
+          <div class="row">
+            <div ng-repeat="item in song.entry | filter:searchInputVal" class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+				<div class="caja card mb-4 shadow-sm">
+					<div ng-repeat="img in item['im:image']">
+						<div ng-if="img.attributes.height == 170"><img class="card-img-top" src="{{ img.label }}" alt="{{ item['im:name'].label}}"></div>
+					</div>
+				<div class="card-body">
+                  <div class="card-text">
+					<p class="title-album"><a href="{{ item.link.attributes.href }}" target="_blank">"{{ item['im:name'].label}}"</a></p>
+					<p class="artist-name"><a href="{{ item['im:artist'].attributes.href}} target="_blank"">{{ item['im:artist'].label}}</a></p>
+					<div class="sale panel-group" id="accordion">
+						<div class="panel panel-default">
+							<a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ item.id.attributes['im:id']}}"><div class="panel-heading">
+								<h6 class="panel-title"><i class="fas fa-plus-square"></i> info</h6>
+							</div></a>
+							<div id="collapse-{{ item.id.attributes['im:id']}}" class="panel-collapse collapse">
+								<div class="panel-body">
+									<p>ID: {{ item.id.attributes['im:id']}}</p>
+									<p>Categoria: <a href="{{ item.category.attributes.scheme }}" target="_blank">{{ item.category.attributes.label }}</a></p>
+									<p><a href="">In Apple Music</a></p>
+									<p>{{ item.rights.label }}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				  </div>
+                  <div class="sale d-flex justify-content-between align-items-center">
+                    <small class="price boder">{{ item['im:price'].attributes.currency}}{{ item['im:price'].label}}</small>
+					<div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#buyModal"><i class="fas fa-cart-arrow-down"></i> Buy</button>
+                    </div>
+                  </div>
+				 <!-- Modal BUY WINDOW-->
+					<div id="buyModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h3 class="modal-title"><i class="fas fa-cart-arrow-down"></i> Buy Now</h3><button type="button" class="close" data-dismiss="modal">&times;</button>
+						  </div>
+						  <div class="modal-body">
+							<form action="">
+								<label class="radio-inline"><input type="radio" name="optradio" checked>Credit Card  |  </label>
+								<label class="radio-inline"><input type="radio" name="optradio">Debit Card  |  </label>
+								<label class="radio-inline"><input type="radio" name="optradio">PayPal</label>
+								<div class="form-group">
+								  <label for="usr">First name:</label>
+								  <input type="text" class="form-control" id="usr">
+								  <label for="usr">Last name:</label>
+								  <input type="text" class="form-control" id="usr">
+								  <label for="usr">Name on card:</label>
+								  <input type="text" class="form-control" id="usr">
+								  <label for="usr">Credit card number:</label>
+								  <input type="text" class="form-control" id="usr" style="width:50%">
+								  <label for="usr">CVV:</label>
+								  <input type="text" class="form-control" id="usr" style="width:25%">
+								  <label for="usr">Expiration:</label>
+								  <input type="text" class="form-control" id="usr" style="width:25%">
+								</div>
+								<div class="checkbox">
+								  <label><input type="checkbox" name="remember"> Remember me</label>
+								</div>
+								<button type="submit" class="btn btn-warning">Buy <i class="far fa-credit-card"></i></button>
+						  </form>
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+
+					  </div>
+					</div>
+				<!-- FIN Modal -->
+                </div>
+				</div>
+              </div>
+			</div> 
+            </div>
+			
+		
+<!-- FIN DESPLIEGUE -->			
+			
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="bg-dark text-white">
+      <div class="container">
+        <p class="float-right">
+          <span class="label label-info"><a href="#">Go to Top</a></span>
+        </p>
+        <p>Copyright &copy; musicStore - Your musical corner!</p>
+      </div>
+    </footer>
+<!-- Funcion AngularJS
+    ================================================== -->
+	
+<script>
+var app = angular.module('iTunesApp', []);
+app.controller('artistCtrl', function($scope, $http) {
+  $http.get("https://itunes.apple.com/us/rss/topalbums/limit=100/json").then(function (response) {
+      $scope.control = response.data;
+  });
+});
+</script>
+
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+	<script src="js/show-more.js"></script>
+  
+  </body>
+</html>

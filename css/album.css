@@ -1,0 +1,139 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #ggg;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.navigation-bar{
+	background-color:#e9e9e9;
+}
+
+.menu{
+	background: linear-gradient(to bottom right, #99cc33 0%, #ffffff 86%)!important;
+}
+
+.intro{
+	
+	/*background-image: url("../img/cyan-background.jpg")!important;*/
+	background-position:center;
+	border-bottom:8px solid #33cc66;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/cyan-background.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-container{
+	  background-image: url(../img/bottom-background.png)!important;
+	  background-position:bottom;
+	  background-repeat:no-repeat;
+}
+
+.title-album{
+	font-size:14px;
+	font-weight:bold;
+	line-height:1;
+}
+
+.artist-name{
+	font-size:12px;
+	color:#666;
+	text-align:center;
+	line-height:1;
+	margin-top:-10px;
+}
+
+.sale{
+	border-top: 1px solid #ccc;
+	padding-top:5px;
+}
+
+.price{
+	font-size:14px;
+	font-weight:bold;
+	padding:5px;
+	border: 3px solid #99cc33;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+@-o-keyframes aparecer {
+from {margin-top: -50%; opacity: 0;}
+50% {margin-top: 10%; opacity: 0.2;}
+to {margin-top: 15%; opacity: 1;}
+}
+@-moz-keyframes aparecer {
+from {margin-top: -50%; opacity: 0;}
+50% {margin-top: 10%; opacity: 0.2;}
+to {margin-top: 15%; opacity: 1;}
+}
+@-webkit-keyframes aparecer {
+from {margin-top: -50%; opacity: 0;}
+50% {margin-top: 10%; opacity: 0.2;}
+to {margin-top: 15%; opacity: 1;}
+}
+@-ms-keyframes aparecer {
+from {margin-top: -50%; opacity: 0;}
+50% {margin-top: 10%; opacity: 0.2;}
+to {margin-top: 15%; opacity: 1;}
+}
+
+.caja
+{
+text-align: center;
+animation: aparecer 2s ease-out 1; /*Definimos un nombre para la animación (“aparecer”), un tiempo total de 4segundos de duración y un movimiento suavizado al final*/
+-webkit-animation: aparecer 2s ease-out 1;/*Chrome, Safari, Android, iOs*/
+-moz-animation: aparecer 2s ease-out 1; /*Firefox*/
+-o-animation: aparecer 2s ease-out 1; /*Opera*/
+-ms-animation: aparecer 2s ease-out 1; /*Internet Explorer*/
+}
+
+.header-page{
+	margin: 20px 0px 20px 0px;
+}
+
+.form-body{
+	margin: 20px 0px 20px 0px;
+}
+
+
