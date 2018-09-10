@@ -129,6 +129,7 @@
                   <div class="card-text">
 					<p class="title-album"><a href="{{ item.link.attributes.href }}" target="_blank">"{{ item['im:name'].label}}"</a></p>
 					<p class="artist-name"><a href="{{ item['im:artist'].attributes.href}} target="_blank"">{{ item['im:artist'].label}}</a></p>
+			  		<p class="artist-name">{{ item['im:releaseDate'].attributes.label}}</p>
 					<div class="sale panel-group" id="accordion">
 						<div class="panel panel-default">
 							<a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ item.id.attributes['im:id']}}"><div class="panel-heading">
