@@ -139,7 +139,7 @@
 								<div class="panel-body">
 									<p>ID: {{ item.id.attributes['im:id']}}</p>
 									<p>Categoria: <a href="{{ item.category.attributes.scheme }}" target="_blank">{{ item.category.attributes.label }}</a></p>
-									<p><a href="">In Apple Music</a></p>
+									<p><a href="{{ item.link.attributes.href }}" target="_blank">In Apple Music</a></p>
 									<p>{{ item.rights.label }}</p>
 								</div>
 							</div>
