@@ -1,0 +1,213 @@
+{
+	"feed": {
+		"author": {
+			"name": {
+				"label": "iTunes Store"
+			},
+			"uri": {
+				"label": "http://www.apple.com/itunes/"
+			}
+		},
+		"entry": [
+		{
+				"im:name": {
+					"label": "Look Up Child"
+				},
+				"im:image": [{
+						"label": "https://is5-ssl.mzstatic.com/image/thumb/Music125/v4/e9/b8/8f/e9b88f7c-1ba8-4ed6-53ef-92ad2a13ba48/00829619167009.rgb.jpg/55x55bb-85.png",
+						"attributes": {
+							"height": "55"
+						}
+					},
+					{
+						"label": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e9/b8/8f/e9b88f7c-1ba8-4ed6-53ef-92ad2a13ba48/00829619167009.rgb.jpg/60x60bb-85.png",
+						"attributes": {
+							"height": "60"
+						}
+					},
+					{
+						"label": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/e9/b8/8f/e9b88f7c-1ba8-4ed6-53ef-92ad2a13ba48/00829619167009.rgb.jpg/170x170bb-85.png",
+						"attributes": {
+							"height": "170"
+						}
+					}
+				],
+				"im:itemCount": {
+					"label": "13"
+				},
+				"im:price": {
+					"label": "$9.99",
+					"attributes": {
+						"amount": "9.99000",
+						"currency": "USD"
+					}
+				},
+				"im:contentType": {
+					"im:contentType": {
+						"attributes": {
+							"term": "Album",
+							"label": "Album"
+						}
+					},
+					"attributes": {
+						"term": "Music",
+						"label": "Music"
+					}
+				},
+				"rights": {
+					"label": "℗ 2018 Centricity Music"
+				},
+				"title": {
+					"label": "Look Up Child - Lauren Daigle"
+				},
+				"link": {
+					"attributes": {
+						"rel": "alternate",
+						"type": "text/html",
+						"href": "https://itunes.apple.com/us/album/look-up-child/1409149359?uo=2"
+					}
+				},
+				"id": {
+					"label": "https://itunes.apple.com/us/album/look-up-child/1409149359?uo=2",
+					"attributes": {
+						"im:id": "1409149359"
+					}
+				},
+				"im:artist": {
+					"label": "Lauren Daigle",
+					"attributes": {
+						"href": "https://itunes.apple.com/us/artist/lauren-daigle/722177758?uo=2"
+					}
+				},
+				"category": {
+					"attributes": {
+						"im:id": "22",
+						"term": "Christian & Gospel",
+						"scheme": "https://itunes.apple.com/us/genre/music-christian-gospel/id22?uo=2",
+						"label": "Christian & Gospel"
+					}
+				},
+				"im:releaseDate": {
+					"label": "2018-09-07T00:00:00-07:00",
+					"attributes": {
+						"label": "September 7, 2018"
+					}
+				}
+			},
+			{
+				"im:name": {
+					"label": "Egypt Station"
+				},
+				"im:image": [{
+						"label": "https://is3-ssl.mzstatic.com/image/thumb/Music125/v4/60/f1/4c/60f14ccb-c515-13a6-ed27-897ba7a5a767/00602567545002.rgb.jpg/55x55bb-85.png",
+						"attributes": {
+							"height": "55"
+						}
+					},
+					{
+						"label": "https://is4-ssl.mzstatic.com/image/thumb/Music125/v4/60/f1/4c/60f14ccb-c515-13a6-ed27-897ba7a5a767/00602567545002.rgb.jpg/60x60bb-85.png",
+						"attributes": {
+							"height": "60"
+						}
+					},
+					{
+						"label": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/60/f1/4c/60f14ccb-c515-13a6-ed27-897ba7a5a767/00602567545002.rgb.jpg/170x170bb-85.png",
+						"attributes": {
+							"height": "170"
+						}
+					}
+				],
+				"im:itemCount": {
+					"label": "16"
+				},
+				"im:price": {
+					"label": "$11.99",
+					"attributes": {
+						"amount": "11.99000",
+						"currency": "USD"
+					}
+				},
+				"im:contentType": {
+					"im:contentType": {
+						"attributes": {
+							"term": "Album",
+							"label": "Album"
+						}
+					},
+					"attributes": {
+						"term": "Music",
+						"label": "Music"
+					}
+				},
+				"rights": {
+					"label": "Capitol Records; ℗ 2018 MPL Communications Inc/Ltd, under exclusive license to UMG Recordings, Inc."
+				},
+				"title": {
+					"label": "Egypt Station - Paul McCartney"
+				},
+				"link": {
+					"attributes": {
+						"rel": "alternate",
+						"type": "text/html",
+						"href": "https://itunes.apple.com/us/album/egypt-station/1399826275?uo=2"
+					}
+				},
+				"id": {
+					"label": "https://itunes.apple.com/us/album/egypt-station/1399826275?uo=2",
+					"attributes": {
+						"im:id": "1399826275"
+					}
+				},
+				"im:artist": {
+					"label": "Paul McCartney",
+					"attributes": {
+						"href": "https://itunes.apple.com/us/artist/paul-mccartney/12224?uo=2"
+					}
+				},
+				"category": {
+					"attributes": {
+						"im:id": "21",
+						"term": "Rock",
+						"scheme": "https://itunes.apple.com/us/genre/music-rock/id21?uo=2",
+						"label": "Rock"
+					}
+				},
+				"im:releaseDate": {
+					"label": "2018-09-07T00:00:00-07:00",
+					"attributes": {
+						"label": "September 7, 2018"
+					}
+				}
+			}
+		],
+		"updated": {
+			"label": "2018-09-08T08:27:00-07:00"
+		},
+		"rights": {
+			"label": "Copyright 2008 Apple Inc."
+		},
+		"title": {
+			"label": "iTunes Store: Top Albums"
+		},
+		"icon": {
+			"label": "http://itunes.apple.com/favicon.ico"
+		},
+		"link": [{
+				"attributes": {
+					"rel": "alternate",
+					"type": "text/html",
+					"href": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=us&id=1&popId=11"
+				}
+			},
+			{
+				"attributes": {
+					"rel": "self",
+					"href": "https://itunes.apple.com/us/rss/topalbums/limit=2/json"
+				}
+			}
+		],
+		"id": {
+			"label": "https://itunes.apple.com/us/rss/topalbums/limit=2/json"
+		}
+	}
+}
